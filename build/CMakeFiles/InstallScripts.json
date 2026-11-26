@@ -1,0 +1,14 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/lasangnia/code/git/Microlypse/build/cmake_install.cmake",
+		"/home/lasangnia/code/git/Microlypse/build/external/SFML/cmake_install.cmake",
+		"/home/lasangnia/code/git/Microlypse/build/external/SFML/src/SFML/cmake_install.cmake",
+		"/home/lasangnia/code/git/Microlypse/build/external/SFML/src/SFML/System/cmake_install.cmake",
+		"/home/lasangnia/code/git/Microlypse/build/external/SFML/src/SFML/Window/cmake_install.cmake",
+		"/home/lasangnia/code/git/Microlypse/build/external/SFML/src/SFML/Network/cmake_install.cmake",
+		"/home/lasangnia/code/git/Microlypse/build/external/SFML/src/SFML/Graphics/cmake_install.cmake",
+		"/home/lasangnia/code/git/Microlypse/build/external/SFML/src/SFML/Audio/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

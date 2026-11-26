@@ -1,0 +1,11 @@
+external/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.o: \
+ /home/lasangnia/code/git/Microlypse/external/SFML/src/SFML/Audio/SoundSource.cpp \
+ /usr/include/stdc-predef.h \
+ /home/lasangnia/code/git/Microlypse/external/SFML/include/SFML/Audio/SoundSource.hpp \
+ /home/lasangnia/code/git/Microlypse/external/SFML/include/SFML/Audio/Export.hpp \
+ /home/lasangnia/code/git/Microlypse/external/SFML/include/SFML/Config.hpp \
+ /home/lasangnia/code/git/Microlypse/external/SFML/include/SFML/Audio/AlResource.hpp \
+ /home/lasangnia/code/git/Microlypse/external/SFML/include/SFML/System/Vector3.hpp \
+ /home/lasangnia/code/git/Microlypse/external/SFML/include/SFML/System/Vector3.inl \
+ /home/lasangnia/code/git/Microlypse/external/SFML/src/SFML/Audio/ALCheck.hpp \
+ /usr/include/AL/al.h /usr/include/AL/alc.h
