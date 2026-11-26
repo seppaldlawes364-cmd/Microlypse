@@ -6,6 +6,8 @@ add_subdirectory(external/SFML)
 add_executable(main
     src/main.cpp 
     src/game.cpp
+    src/State.cpp
+    src/Menu.cpp
 )
 
 target_link_libraries(main PRIVATE

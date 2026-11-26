@@ -9,13 +9,14 @@ void Game::initWindow()
 
 void Game::initPacks()
 {
-    gamePack = new GamePack{*window,event,dt};
+    gamePack = new GamePack{*window,*window,event,dt};
 }
 
 void Game::update()
 {
     updateDt();
     pollEvent();
+    state->update();
 }
 
 void Game::updateDt()
@@ -38,9 +39,16 @@ void Game::pollEvent()
     }
 }
 
+void Game::manageStates()
+{
+
+}
+
 void Game::render()
 {
     window->clear(sf::Color::Blue);
+
+    state->render();
 
     window->display();
 }
@@ -49,6 +57,8 @@ Game::Game()
 {
     initWindow();
     initPacks();
+    currentState = States::menu;
+    state = new Menu{*gamePack};
 }
 
 void Game::run()

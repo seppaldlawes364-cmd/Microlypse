@@ -1,4 +1,5 @@
-#include "Structs/gamePack.h"
+#include "States/State.h"
+#include "States/Menu.h" 
 #include <iostream>
 class Game{
 private:
@@ -6,6 +7,9 @@ private:
     sf::RenderWindow *window;
     sf::Event event;
     sf::Clock clock;
+
+    States currentState = menu;
+    State *state;
 
     GamePack *gamePack;
 
@@ -15,6 +19,7 @@ private:
     void update();
     void updateDt();
     void pollEvent();
+    void manageStates();
 
     void render();
 public:
