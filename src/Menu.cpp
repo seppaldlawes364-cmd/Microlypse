@@ -4,14 +4,9 @@ void Menu::update()
 {
     if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
         if(gameButton.mouseCollision(&gamePack.window)){
-            std::cout << "sudo rm -r /" << std::endl;
-        }
-        else{
-            std::cout << "fuhkaing worhks" << std::endl;
+            stateOverride = States::game;
         }
     }
-    
-    std::cout << "1" << std::endl;
 }
 
 void Menu::render(sf::RenderTarget* target)
@@ -21,6 +16,7 @@ void Menu::render(sf::RenderTarget* target)
 
 Menu::Menu(GamePack &gamePack) : State(gamePack)
 {
+    stateOverride = menu;
     sans.loadFromFile("../Fonts/Sans_Big.ttf");
     gameButton.setFont(sans);
     gameButton.setPosition({static_cast<float>(gamePack.window.getSize().x/2),static_cast<float>(gamePack.window.getSize().y/2)});

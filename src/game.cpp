@@ -14,6 +14,7 @@ void Game::initPacks()
 
 void Game::update()
 {
+    manageStates();
     updateDt();
     pollEvent();
     state->update();
@@ -41,7 +42,24 @@ void Game::pollEvent()
 
 void Game::manageStates()
 {
-
+    if(currentState != state->newState()){
+        currentState = state->newState();
+        switch (state->newState())
+        {
+        case menu:
+            std::cout << "Menu" << std::endl;
+            delete state;
+            state = new Menu{*gamePack};
+            break;
+        case game:
+            std::cout << "Game" << std::endl;
+            delete state;
+            state = new GameState{*gamePack};
+            break;
+        default:
+            break;
+        }
+    }
 }
 
 void Game::render()

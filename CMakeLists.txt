@@ -1,19 +1,21 @@
 cmake_minimum_required(VERSION 3.10)
-project(main)
+project(micropolypse)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_subdirectory(external/SFML)
-add_executable(main
+add_executable(micropolypse
     src/main.cpp 
     src/game.cpp
     src/State.cpp
     src/Menu.cpp
     src/Button.cpp
     src/Slider.cpp
-    src/Game.cpp
+    src/GameState.cpp
+    src/Tile.cpp
+    src/TileMap.cpp
 )
 
-target_link_libraries(main PRIVATE
+target_link_libraries(micropolypse PRIVATE
     sfml-graphics
     sfml-audio
     sfml-window

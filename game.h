@@ -1,5 +1,6 @@
 #include "States/State.h"
 #include "States/Menu.h" 
+#include "States/GameState.h"
 #include <iostream>
 class Game{
 private:

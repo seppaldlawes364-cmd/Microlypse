@@ -1,9 +1,11 @@
 #pragma once
+#include <vector>
 #include "../UsableThings/Button.h"
 #include "../UsableThings/Slider.h"
 #include "../Structs/gamePack.h"
 enum States{
-    menu
+    menu,
+    game
 };
 class State{
 protected:
