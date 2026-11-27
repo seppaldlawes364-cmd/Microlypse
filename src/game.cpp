@@ -2,7 +2,7 @@
 
 void Game::initWindow()
 {
-    window = new sf::RenderWindow(sf::VideoMode(1920,1100),"Microlypse");
+    window = new sf::RenderWindow(sf::VideoMode(1920,1100),"Micropolypse");
     window->setVerticalSyncEnabled(false);
     window->setFramerateLimit(60);
 }

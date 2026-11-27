@@ -2,6 +2,16 @@
 
 void Menu::update()
 {
+    if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+        if(gameButton.mouseCollision(&gamePack.window)){
+            std::cout << "sudo rm -r /" << std::endl;
+        }
+        else{
+            std::cout << "fuhkaing worhks" << std::endl;
+        }
+    }
+    
+    std::cout << "1" << std::endl;
 }
 
 void Menu::render(sf::RenderTarget* target)

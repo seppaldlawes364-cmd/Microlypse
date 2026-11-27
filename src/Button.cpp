@@ -29,8 +29,11 @@ void Button::setFont(sf::Font &font)
 
 bool Button::mouseCollision(sf::RenderWindow *window)
 {
+    
     sf::Vector2i mousePos = sf::Mouse::getPosition(*window);
+    std::cout << "hello ig" << std::endl;
     sf::Vector2f mouseWindowPos = window->mapPixelToCoords(mousePos);
+    
     if(this -> shape.getGlobalBounds().contains(mouseWindowPos)){
         return true;
     }

@@ -13,7 +13,7 @@ States State::newState()
     return stateOverride;
 }
 
-State::State(GamePack gamePack) : gamePack(gamePack)
+State::State(GamePack& gamePack) : gamePack(gamePack)
 {
 
 }

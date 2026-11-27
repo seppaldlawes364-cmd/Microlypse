@@ -14,5 +14,5 @@ public:
     virtual void update();
     virtual void render(sf::RenderTarget* target);
     States newState();
-    State(GamePack gamePack);
+    State(GamePack& gamePack);
 };
