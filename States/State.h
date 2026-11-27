@@ -6,12 +6,13 @@ enum States{
     menu
 };
 class State{
-private:
+protected:
+    sf::Font sans;
     GamePack& gamePack;
     States stateOverride;
 public:
     virtual void update();
-    virtual void render();
+    virtual void render(sf::RenderTarget* target);
     States newState();
     State(GamePack gamePack);
 };

@@ -1,6 +1,19 @@
 #include "../States/Menu.h"
 
-Menu::Menu(GamePack &gamePack):State(gamePack)
+void Menu::update()
 {
-    
+}
+
+void Menu::render(sf::RenderTarget* target)
+{
+    gameButton.render(target);
+}
+
+Menu::Menu(GamePack &gamePack) : State(gamePack)
+{
+    sans.loadFromFile("../Fonts/Sans_Big.ttf");
+    gameButton.setFont(sans);
+    gameButton.setPosition({static_cast<float>(gamePack.window.getSize().x/2),static_cast<float>(gamePack.window.getSize().y/2)});
+    gameButton.setString("Start Game");
+    gameButton.setTextScale(2);
 }

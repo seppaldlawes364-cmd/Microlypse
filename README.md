@@ -1,2 +1,2 @@
 # Microlypse
-youre a linux user that runs from the microsoft invasion
+youre a linux user that fights the Microsoft invasion to save the kernel

@@ -8,6 +8,9 @@ add_executable(main
     src/game.cpp
     src/State.cpp
     src/Menu.cpp
+    src/Button.cpp
+    src/Slider.cpp
+    src/Game.cpp
 )
 
 target_link_libraries(main PRIVATE

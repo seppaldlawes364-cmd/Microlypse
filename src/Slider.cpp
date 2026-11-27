@@ -1,4 +1,4 @@
-#include "Slider.h"
+#include "../UsableThings/Slider.h"
 
 void Slider::initShapes()
 {

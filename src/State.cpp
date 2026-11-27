@@ -4,7 +4,7 @@ void State::update()
 {
 }
 
-void State::render()
+void State::render(sf::RenderTarget* target)
 {
 }
 

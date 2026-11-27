@@ -46,9 +46,9 @@ void Game::manageStates()
 
 void Game::render()
 {
-    window->clear(sf::Color::Blue);
+    window->clear(sf::Color(186,176,149));
 
-    state->render();
+    state->render(window);
 
     window->display();
 }
