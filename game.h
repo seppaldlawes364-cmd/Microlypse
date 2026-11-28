@@ -25,5 +25,6 @@ private:
     void render();
 public:
     Game();
+    ~Game();
     void run();
 };

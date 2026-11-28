@@ -1,5 +1,11 @@
 #include "../States/State.h"
 
+void State::initBackground(std::string pathToFile)
+{
+    backgroundTex.loadFromFile(pathToFile);
+    background.setTexture(backgroundTex);
+}
+
 void State::update()
 {
 }

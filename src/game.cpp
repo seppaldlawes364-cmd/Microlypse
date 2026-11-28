@@ -2,7 +2,7 @@
 
 void Game::initWindow()
 {
-    window = new sf::RenderWindow(sf::VideoMode(1920,1100),"Micropolypse");
+    window = new sf::RenderWindow(sf::VideoMode(1024,1024),"Micropolypse");
     window->setVerticalSyncEnabled(false);
     window->setFramerateLimit(60);
 }
@@ -46,6 +46,10 @@ void Game::manageStates()
         currentState = state->newState();
         switch (state->newState())
         {
+        case EXIT:
+            std::cout << "EXIT" << std::endl;
+            window->close();
+            break;
         case menu:
             std::cout << "Menu" << std::endl;
             delete state;
@@ -77,6 +81,12 @@ Game::Game()
     initPacks();
     currentState = States::menu;
     state = new Menu{*gamePack};
+}
+
+Game::~Game()
+{
+    delete state;
+    delete window;
 }
 
 void Game::run()
